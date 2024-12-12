@@ -1,0 +1,79 @@
+body {
+    color: rgb(177, 50, 82);
+    background-color: rgba(10, 23, 55, 0.5);
+    margin: 24px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+header.titulo {
+    border: solid 5px rgb(153, 51, 85);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(228, 42, 42);
+}
+
+.menu {
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* Melhor contraste */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: rgb(190, 61, 111);
+}
+
+.texto-m {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: 0 5%;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    opacity: 0.9;
+    height: 200px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.image-gallery img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.curiosidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: left;
+}
+
+.curiosidades-container p {
+    max-width: 300px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .menu, .image-gallery, .curiosidades-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu {
+        padding: 20px;
+    }
+
+    .texto-m {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+}
